@@ -1,5 +1,5 @@
 
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import {BrowserRouter as Router,Routes,Route,Navigate} from "react-router-dom";
 import Contact from './Contact.js';
 import Home from './Home.js';
 import Student from "./Student.js";
@@ -27,7 +27,7 @@ const App=()=> {
       <Header />
 
       <Routes>
-         <Route path="/" element={<Home />} />
+         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/home" element={<Home />} />
         <Route path="/student" element={<Student />} />
