@@ -27,6 +27,7 @@ const App=()=> {
       <Header />
 
       <Routes>
+         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/home" element={<Home />} />
         <Route path="/student" element={<Student />} />
